@@ -16,7 +16,7 @@ public class JobPostActivityController {
     public JobPostActivityController(UsersService usersService) {
         this.usersService = usersService;
     }
-    @GetMapping("/dashboard")
+    @GetMapping("/dashboard/")
     public String searchJobs(Model model){
         Object currentUserProfile = usersService.getCurrentUserProfile();
         Authentication authentication = SecurityContextHolder.getContext()
