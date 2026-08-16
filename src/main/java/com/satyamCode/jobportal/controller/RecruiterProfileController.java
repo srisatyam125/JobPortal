@@ -74,6 +74,6 @@ public class RecruiterProfileController {
         } catch (Exception ex){
             ex.printStackTrace();
         }
-        return "redirect:/dashboard";
+        return "redirect:/dashboard/";
     }
 }
